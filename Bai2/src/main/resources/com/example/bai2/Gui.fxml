@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.bai2.Controller"
+            prefHeight="400.0" prefWidth="600.0">
+    <HBox>
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID"/>
+                <TableColumn fx:id="nameColumn" text="NAME"/>
+                <TableColumn fx:id="ageColumn" text="AGE"/>
+                <TableColumn fx:id="genderColumn" text="GENDER"/>
+                <TableColumn fx:id="addressColumn" text="ADDRESS"/>
+            </columns>
+        </TableView>
+        <VBox>
+            <TextField fx:id="idField" promptText="ID"/>
+            <TextField fx:id="nameField" promptText="NAME"/>
+            <TextField fx:id="ageField" promptText="AGE"/>
+            <TextField fx:id="genderField" promptText="GENDER"/>
+            <TextField fx:id="addressField" promptText="ADDRESS"/>
+            <Button text="ENTER" onAction="#push"/>
+            <HBox>
+                <TextField promptText="SEARCH" fx:id="search"/>
+                <Button onAction="#check" text="CHECK"/>
+            </HBox>
+        </VBox>
+    </HBox>
+</AnchorPane>
